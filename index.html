@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Checker</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="bg-gray-900 text-white flex items-center justify-center min-h-screen p-4">
+    <main class="bg-gray-800 p-8 rounded-xl shadow-2xl w-full max-w-md text-center">
+        <h1 class="text-3xl font-bold mb-4 text-cyan-400">Is it a Palindrome?</h1>
+        <p class="text-gray-400 mb-6">Enter text below to check if it's a palindrome. Punctuation, case, and spacing are
+            ignored.</p>
+        <div class="flex flex-col sm:flex-row gap-4 mb-6">
+            <input type="text" id="text-input"
+                class="w-full bg-gray-700 text-white px-4 py-2 rounded-lg border-2 border-gray-600 focus:border-cyan-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition"
+                placeholder="e.g., A man, a plan...">
+            <button id="check-btn"
+                class="bg-cyan-500 hover:bg-cyan-600 text-gray-900 font-bold py-2 px-6 rounded-lg transition duration-300 shadow-lg hover:shadow-cyan-500/50">
+                Check
+            </button>
+        </div>
+        <div id="result"
+            class="bg-gray-700 p-4 rounded-lg flex items-center justify-center text-lg font-semibold text-gray-200">
+        </div>
+    </main>
+    <div id="custom-alert"
+        class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center opacity-0 pointer-events-none">
+        <div class="bg-red-500 text-white p-6 rounded-lg shadow-xl text-center">
+            <p class="font-bold text-xl mb-2">Warning</p>
+            <p id="alert-message">Please input a value</p>
+            <button id="close-alert-btn"
+                class="mt-4 bg-white text-red-500 font-bold py-1 px-4 rounded-lg">Close</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

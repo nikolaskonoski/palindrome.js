@@ -1,0 +1,13 @@
+body {
+    font-family: 'Inter', sans-serif;
+    transition: background-color 0.3s;
+}
+
+#result {
+    min-height: 5rem;
+    word-wrap: break-word;
+}
+
+#custom-alert {
+    transition: opacity 0.3s ease-in-out;
+}
